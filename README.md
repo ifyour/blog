@@ -1,5 +1,3 @@
-# shud.in
-
-I decided to switch back to raw Markdown files for blogging. 
+# Blog
 
 Built with [Nextra](https://github.com/shuding/nextra).
