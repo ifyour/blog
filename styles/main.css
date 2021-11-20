@@ -48,10 +48,6 @@ h1 {
   font-variation-settings: "wght"700;
 }
 
-.post-item-more {
-  display: none;
-}
-
 .post-item {
   margin-bottom: 3rem;
 }
