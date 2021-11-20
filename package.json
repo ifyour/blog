@@ -23,5 +23,9 @@
     "tabWidth": 2,
     "trailingComma": "none",
     "semi": false
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.35",
+    "typescript": "^4.5.2"
   }
 }
