@@ -1,7 +1,10 @@
-const withNextra = require("nextra")({
+const nextraConfigs = require("nextra")({
   theme: "nextra-theme-blog",
   themeConfig: "./theme.config.js",
   unstable_staticImage: true,
 });
 
-module.exports = withNextra();
+// next.js configuration here
+module.exports = {
+  ...nextraConfigs()
+};
