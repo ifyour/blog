@@ -2,6 +2,7 @@ const YEAR = new Date().getFullYear();
 const COPYRIGHT_STATEMENT = 'This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.';
 
 export default {
+  readMore: 'Read More →',
   head: (
     <>
       <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
