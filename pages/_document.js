@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
 
   render() {
     const meta = {
-      title: "Ming's Blog",
+      title: "Ming's blog",
       description: '明明的博客，记录一个开发者的日常。',
       twitter: '@JohnWmm',
       image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
