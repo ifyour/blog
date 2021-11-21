@@ -17,7 +17,7 @@ export default function Callout(props: IProps) {
           padding: 0.5rem 1rem;
           border-radius: 0.5rem;
           display: flex;
-          margin-bottom: 1rem;
+          margin: 0.6rem 0;
           background: ${classnames({
             '#fffaf1': type === 'tip',
             '#fefbc2': type === 'warning',
