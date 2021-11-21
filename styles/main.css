@@ -122,4 +122,32 @@ article.prose pre {
 article.prose pre code {
   display: inline-block;
   padding: 0;
+  width: 100%;
+}
+
+article.prose p > code {
+  font-size: 0.9em;
+  border-radius: 0.25rem;
+  background-color: #e7ebef;
+  font-weight: normal;
+  padding: 0.2em;
+}
+
+.contains-task-list {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.task-list-item {
+  padding-left: 0 !important;
+  margin: 0;
+  height: 2em;
+}
+
+.task-list-item > input {
+  margin-right: 0.55em;
+}
+
+.task-list-item::before {
+  display: none !important;
 }
