@@ -1,18 +1,18 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-class MyDocument extends Document {
+export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
     const meta = {
       title: "Ming's Blog",
       description: '明明的博客，记录一个开发者的日常。',
-      image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
       twitter: '@JohnWmm',
-    }
+      image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
+    };
     return (
       <Html lang="zh">
         <Head>
@@ -33,8 +33,6 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
-
-export default MyDocument

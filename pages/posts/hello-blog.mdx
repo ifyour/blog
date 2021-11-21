@@ -4,18 +4,28 @@ date: 2021-11-20
 tag: Life
 description: Markdown 测试文章，主要看能否正常展示标签。
 ---
-import Callout from '../components/Callout'
+
+import Callout from '../components/Callout';
 
 # Hello, blog
+
 ## h2 Heading
+
 ### h3 Heading
+
 #### h4 Heading
+
 ##### h5 Heading
+
 ###### h6 Heading
 
 <Callout>普通提示</Callout>
-<Callout emoji="🚧" type="warning">这是一条警告信息</Callout>
-<Callout emoji="🚫" type="error">这是一条错误信息</Callout>
+<Callout emoji="🚧" type="warning">
+  这是一条警告信息
+</Callout>
+<Callout emoji="🚫" type="error">
+  这是一条错误信息
+</Callout>
 
 ## Emphasis
 
@@ -48,8 +58,8 @@ Ordered
 Inline `code`
 
 ```jsx
-import Image from "next/image"
-import avatar from "../../public/images/avatar.jpg"
+import Image from 'next/image';
+import avatar from '../../public/images/avatar.jpg';
 
 export default function Avatar() {
   return (
