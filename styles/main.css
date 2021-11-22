@@ -85,6 +85,7 @@ article.prose code {
 
 article.prose a {
   word-break: break-word;
+  color: #748094;
 }
 
 @media screen and (max-width: 480px) {
