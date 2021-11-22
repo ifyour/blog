@@ -11,6 +11,7 @@ export default function Quotes() {
     '只有信念使快乐真实。',
     '没有意志，理想便是幻想。',
     '君子藏器于身，待时而动。',
+    '保持好奇心，广泛阅读，尝试新事物。'
   ];
   return quotes[Math.floor(Math.random() * quotes.length)];
 }
