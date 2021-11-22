@@ -141,7 +141,7 @@ article.prose p > code {
 .task-list-item {
   padding-left: 0 !important;
   margin: 0;
-  height: 2em;
+  height: 1.9em;
 }
 
 .task-list-item > input {
