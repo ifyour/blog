@@ -23,7 +23,7 @@ async function generate() {
 
       feed.item({
         title: frontMatter.data.title,
-        url: '/posts/' + name.replace(/\.mdx?/, ''),
+        url: 'https://mingming.dev/posts/' + name.replace(/\.mdx?/, ''),
         date: frontMatter.data.date,
         description: frontMatter.data.description,
         categories: frontMatter.data.tag.split(', '),
