@@ -3,12 +3,15 @@ const path = require('path');
 const RSS = require('rss');
 const matter = require('gray-matter');
 
+const SITE_TITLE = "Ming's blog";
+const SITE_URL = 'https://mingming.dev/';
+
 // @TODO: for now let's generate with all posts, unsorted
 async function generate() {
   const feed = new RSS({
-    title: "Ming's blog",
-    site_url: 'https://mingming.dev/',
-    feed_url: 'https://mingming.dev/feed.xml',
+    title: SITE_TITLE,
+    site_url: SITE_URL,
+    feed_url: `${SITE_URL}/feed.xml`,
   });
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'));
@@ -23,7 +26,7 @@ async function generate() {
 
       feed.item({
         title: frontMatter.data.title,
-        url: 'https://mingming.dev/posts/' + name.replace(/\.mdx?/, ''),
+        url: `${SITE_URL}posts/` + name.replace(/\.mdx?/, ''),
         date: frontMatter.data.date,
         description: frontMatter.data.description,
         categories: frontMatter.data.tag.split(', '),
