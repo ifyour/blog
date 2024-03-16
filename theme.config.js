@@ -8,10 +8,10 @@ export default {
   postFooter: null,
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
-      <abbr title={COPYRIGHT_STATEMENT} style={{ cursor: 'help' }}>
+      <time>{YEAR}</time> © Ming's Blog
+      <abbr title={COPYRIGHT_STATEMENT} style={{ cursor: 'help', marginLeft: 6 }}>
         CC BY-NC 4.0
-      </abbr>{' '}
-      <time>{YEAR}</time> © Ming's blog
+      </abbr>
       <a style={{ float: 'right' }} href="/feed.xml">
         RSS
       </a>
