@@ -1,13 +1,13 @@
-import classnames from 'classnames';
+import classnames from 'classnames'
 
 interface IProps {
-  emoji?: string;
-  type?: 'warning' | 'error' | 'tip';
-  children?: React.ReactNode;
+  emoji?: string
+  type?: 'warning' | 'error' | 'tip'
+  children?: React.ReactNode
 }
 
 export default function Callout(props: IProps) {
-  const { children, emoji = '💡', type = 'tip' } = props;
+  const { children, emoji = '💡', type = 'tip' } = props
   return (
     <div className="container">
       <div className="icon">{emoji}</div>
@@ -45,5 +45,5 @@ export default function Callout(props: IProps) {
         }
       `}</style>
     </div>
-  );
+  )
 }

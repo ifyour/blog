@@ -63,32 +63,32 @@ h1 {
   color: #b9bfcc;
 }
 
-article.prose {
+article.nx-prose {
   color: #313233;
   font-variation-settings: 'wght' 450;
 }
 
-article.md\:prose h1 {
+article.md\:nx-prose h1 {
   font-size: 2em;
   margin-bottom: 0.4em;
 }
 
-article.prose code::before,
-article.prose code::after {
+article.nx-prose code::before,
+article.nx-prose code::after {
   content: none;
 }
 
-article.prose code {
+article.nx-prose code {
   font-size: 0.95em;
   padding: 0 0.1em;
 }
 
-article.prose a {
+article.nx-prose a {
   word-break: break-word;
   color: #748094;
 }
 
-article.prose a[target='_blank'] {
+article.nx-prose a[target='_blank'] {
   background: transparent
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 24 24" width="0.7em" height="0.7em" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" style="color: gray"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg>')
     no-repeat center right;
@@ -121,19 +121,19 @@ img.next-image {
   font-family: sans-serif;
 }
 
-article.prose pre {
+article.nx-prose pre {
   background-color: #f7f7f7 !important;
   letter-spacing: 0;
   font-size: 0.95rem;
 }
 
-article.prose pre code {
+article.nx-prose pre code {
   display: inline-block;
   padding: 0;
   width: 100%;
 }
 
-article.prose p > code {
+article.nx-prose p > code {
   font-size: 0.9em;
   border-radius: 0.25rem;
   background-color: #e7ebef;

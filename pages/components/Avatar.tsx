@@ -1,19 +1,14 @@
-import Image from 'next/image';
-import avatar from '../../public/images/avatar.jpg';
+import Image from 'next/image'
+import avatar from '../../public/images/avatar.jpg'
 
 export default function Avatar() {
   return (
-    <div className="avatar-container">
-      <Image src={avatar} alt="avatar" />
-      <style jsx>{`
-        .avatar-container {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          overflow: hidden;
-          margin-right: 20px;
-        }
-      `}</style>
-    </div>
-  );
+    <Image
+      src={avatar}
+      alt="avatar"
+      width={100}
+      height={100}
+      style={{ borderRadius: '50%', margin: 0 }}
+    />
+  )
 }
