@@ -73,11 +73,6 @@ article.md\:nx-prose h1 {
   margin-bottom: 0.4em;
 }
 
-article.nx-prose code::before,
-article.nx-prose code::after {
-  content: none;
-}
-
 article.nx-prose code {
   font-size: 0.95em;
   padding: 0 0.1em;
@@ -93,6 +88,11 @@ article.nx-prose a[target='_blank'] {
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 24 24" width="0.7em" height="0.7em" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" style="color: gray"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg>')
     no-repeat center right;
   padding-right: 0.9em;
+}
+
+.nx-prose code .line {
+  display: inline-block;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -122,7 +122,7 @@ img.next-image {
 }
 
 article.nx-prose pre {
-  background-color: #f7f7f7 !important;
+  background-color: #f7f7f7;
   letter-spacing: 0;
   font-size: 0.95rem;
 }

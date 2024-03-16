@@ -5,9 +5,35 @@ tag: Life
 description: Markdown 测试文章，主要看能否正常展示标签。
 ---
 
-import Callout from '../components/Callout';
+import Callout from '../components/Callout'
 
 # Hello, blog
+
+## Code
+
+Inline `let x = 1`
+
+```jsx showLineNumbers filename="example.js" copy {5-10} /Image/1
+import Image from 'next/image'
+import avatar from '../../public/images/avatar.jpg'
+
+export default function Avatar() {
+  return (
+    <div className="avatar-container">
+      <Image src={avatar} alt="avatar" />
+      <style jsx>{`
+        .avatar-container {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 20px;
+        }
+      `}</style>
+    </div>
+  )
+}
+```
 
 <Callout emoji="👾">
   **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro Nishikado.
@@ -54,32 +80,6 @@ Ordered
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-
-## Code
-
-Inline `let x = 1`
-
-```jsx highlight=8,9,10,11
-import Image from 'next/image';
-import avatar from '../../public/images/avatar.jpg';
-
-export default function Avatar() {
-  return (
-    <div className="avatar-container">
-      <Image src={avatar} alt="avatar" />
-      <style jsx>{`
-        .avatar-container {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          overflow: hidden;
-          margin-right: 20px;
-        }
-      `}</style>
-    </div>
-  );
-}
-```
 
 ## Tables
 
