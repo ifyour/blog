@@ -13,6 +13,10 @@
     "react-dom": "^18.2.0",
     "rss": "^1.2.2"
   },
+  "devDependencies": {
+    "@types/node": "20.11.28",
+    "typescript": "5.4.2"
+  },
   "prettier": {
     "printWidth": 100,
     "arrowParens": "always",
@@ -20,9 +24,5 @@
     "tabWidth": 2,
     "trailingComma": "es5",
     "semi": false
-  },
-  "devDependencies": {
-    "@types/node": "20.11.28",
-    "typescript": "5.4.2"
   }
 }
